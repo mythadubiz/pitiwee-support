@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pitiwee — Support</title>
+    <link rel="icon" type="image/png" href="pitiwee_icon.png">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(170deg, #1a3560 0%, #040710 100%);
+            color: #e0e0f0;
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+        .container { max-width: 640px; margin: 0 auto; }
+        .header { text-align: center; margin-bottom: 50px; }
+        .app-icon {
+            width: 100px; height: 100px;
+            border-radius: 22px;
+            margin-bottom: 16px;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+        }
+        h1 { font-size: 28px; font-weight: 700; margin-bottom: 8px; color: #ffffff; }
+        .subtitle { color: #8899bb; font-size: 16px; }
+        .badge {
+            display: inline-block;
+            background: rgba(212, 168, 74, 0.15);
+            border: 1px solid rgba(212, 168, 74, 0.3);
+            color: #d4a84a; font-size: 12px; font-weight: 600;
+            padding: 4px 12px; border-radius: 20px; margin-top: 12px;
+        }
+        .card {
+            background: rgba(255,255,255,0.04);
+            border: 1px solid rgba(255,255,255,0.07);
+            border-radius: 16px; padding: 28px; margin-bottom: 18px;
+            transition: border-color 0.3s;
+        }
+        .card:hover { border-color: rgba(212,168,74,0.2); }
+        .card h2 {
+            font-size: 17px; margin-bottom: 14px; color: #ffffff;
+            display: flex; align-items: center; gap: 10px;
+        }
+        .card h2 .emoji { font-size: 20px; }
+        .card p { color: #aaaacc; line-height: 1.7; font-size: 15px; margin-bottom: 10px; }
+        .card p:last-child { margin-bottom: 0; }
+        strong { color: #ddddee; }
+        a { color: #d4a84a; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        .contact-link {
+            display: inline-block;
+            background: linear-gradient(135deg, #b8860b, #d4a84a);
+            color: #0a0a14; padding: 14px 32px; border-radius: 12px;
+            font-weight: 700; font-size: 16px; margin-top: 10px;
+            text-decoration: none; transition: opacity 0.3s;
+        }
+        .contact-link:hover { opacity: 0.85; text-decoration: none; }
+        .privacy-link {
+            display: block; text-align: center;
+            background: rgba(212,168,74,0.1);
+            border: 1px solid rgba(212,168,74,0.2);
+            color: #d4a84a; padding: 16px; border-radius: 12px;
+            font-weight: 600; font-size: 15px; text-decoration: none;
+            transition: background 0.3s;
+        }
+        .privacy-link:hover { background: rgba(212,168,74,0.18); text-decoration: none; }
+        .features {
+            display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-top: 16px;
+        }
+        .feature {
+            background: rgba(255,255,255,0.03);
+            border: 1px solid rgba(255,255,255,0.05);
+            border-radius: 12px; padding: 16px; text-align: center;
+        }
+        .feature .number { font-size: 24px; font-weight: 700; color: #d4a84a; }
+        .feature .label { font-size: 13px; color: #8888aa; margin-top: 4px; }
+        .tier { display: flex; gap: 12px; margin-top: 16px; }
+        .tier-card {
+            flex: 1; background: rgba(255,255,255,0.03);
+            border: 1px solid rgba(255,255,255,0.06);
+            border-radius: 12px; padding: 18px;
+        }
+        .tier-card.premium {
+            border-color: rgba(212,168,74,0.3);
+            background: rgba(212,168,74,0.05);
+        }
+        .tier-card h3 { font-size: 14px; font-weight: 700; margin-bottom: 10px; color: #ffffff; }
+        .tier-card.premium h3 { color: #d4a84a; }
+        .tier-card ul { list-style: none; padding: 0; }
+        .tier-card ul li { font-size: 13px; color: #9999bb; padding: 3px 0; }
+        .tier-card ul li::before { content: "✓ "; color: #55aa55; }
+        .tier-card.premium ul li::before { color: #d4a84a; }
+        .footer {
+            text-align: center; margin-top: 40px; padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.06);
+            color: #555566; font-size: 13px;
+        }
+        .footer p { margin-bottom: 4px; }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <img src="pitiwee_icon.png" alt="Pitiwee" class="app-icon">
+        <h1>Pitiwee</h1>
+        <p class="subtitle">The little salmon — bedtime stories for children</p>
+        <span class="badge">Ages 2–5 · 9 Languages</span>
+    </div>
+
+    <div class="card">
+        <h2><span class="emoji">📬</span> Contact Support</h2>
+        <p>Need help or have a question? We'd love to hear from you.</p>
+        <br>
+        <a href="mailto:mythadubiz@gmail.com" class="contact-link">Email Us</a>
+    </div>
+
+    <div class="card">
+        <h2><span class="emoji">❓</span> FAQ</h2>
+        <p><strong>How do I restore my purchase?</strong><br>
+        Open the app → tap the ⚙️ gear icon → tap "Unlock All" → tap "Restore Purchases" at the bottom.</p>
+        <br>
+        <p><strong>How do I change the language?</strong><br>
+        Tap the ⚙️ gear icon from the library → choose from 9 available languages. The narration and text switch instantly.</p>
+        <br>
+        <p><strong>The narration is not playing. What should I do?</strong><br>
+        Make sure your device is not in silent mode. You can also toggle narration on/off using the 📖 icon while reading.</p>
+        <br>
+        <p><strong>Can I record my own voice to narrate the story?</strong><br>
+        Yes! While reading, tap the 🎙 icon on any page to record your own narration. Enable "Use my recordings" in Settings to play your voice instead of the built-in narration.</p>
+        <br>
+        <p><strong>How many episodes are included for free?</strong><br>
+        Episode 1 is completely free. Episodes 2 through 7 require a one-time premium purchase.</p>
+        <br>
+        <p><strong>Is my data collected?</strong><br>
+        No. Pitiwee does not collect any personal data. Voice recordings are stored only on your device. <a href="privacy.html">Read our Privacy Policy</a>.</p>
+    </div>
+
+    <div class="card">
+        <h2><span class="emoji">📊</span> What's Inside</h2>
+        <div class="features">
+            <div class="feature">
+                <div class="number">7</div>
+                <div class="label">Episodes</div>
+            </div>
+            <div class="feature">
+                <div class="number">9</div>
+                <div class="label">Languages</div>
+            </div>
+            <div class="feature">
+                <div class="number">35</div>
+                <div class="label">Illustrations</div>
+            </div>
+            <div class="feature">
+                <div class="number">🎙</div>
+                <div class="label">Voice Recording</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="card">
+        <h2><span class="emoji">💎</span> Free vs Premium</h2>
+        <div class="tier">
+            <div class="tier-card">
+                <h3>Free</h3>
+                <ul>
+                    <li>Episode 1 complete</li>
+                    <li>All 9 languages</li>
+                    <li>Audio narration</li>
+                    <li>Music &amp; sound effects</li>
+                    <li>Voice recording</li>
+                </ul>
+            </div>
+            <div class="tier-card premium">
+                <h3>Premium (one-time)</h3>
+                <ul>
+                    <li>All 7 episodes</li>
+                    <li>All 9 languages</li>
+                    <li>Full audio narration</li>
+                    <li>All illustrations</li>
+                    <li>Yours forever</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <a href="privacy.html" class="privacy-link">🔒 Privacy Policy</a>
+
+    <div class="footer">
+        <p>&copy; 2026 Pitiwee. All rights reserved.</p>
+    </div>
+</div>
+</body>
+</html>
