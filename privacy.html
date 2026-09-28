@@ -72,7 +72,7 @@
 
     <div class="card">
         <h2><span class="emoji">🔒</span> Privacy by Design</h2>
-        <p>Pitiwee is a children's bedtime story app designed with <strong>privacy as its foundation</strong>. We believe children's data should never leave their family's device. We have zero interest in collecting any information about your child or your family.</p>
+        <p>Pitiwee is a children's bedtime story app designed with <strong>privacy as its foundation</strong>. We believe children's data should never leave their family's device. We have zero interest in collecting any information about your child or your family. Starting with version 1.5, the app can send <strong>anonymous usage statistics</strong> — off until a parent explicitly agrees, with nothing personal and no advertising identifier. See <a href="#analytics">Anonymous Usage Statistics</a>.</p>
     </div>
 
     <div class="card">
@@ -81,10 +81,10 @@
         <ul>
             <li>We do not collect names, email addresses, or any personal information</li>
             <li>We do not collect data about children</li>
-            <li>We do not collect device identifiers or usage statistics</li>
+            <li>We do not use any advertising identifier (IDFA), and we do not track you across other apps or websites</li>
             <li>We do not collect your location</li>
             <li>We do not collect or transmit voice recordings</li>
-            <li>We do not use analytics, advertising SDKs, or crash reporting tools</li>
+            <li>We show <strong>no advertising</strong>. Pitiwee can send <em>anonymous</em> usage statistics and crash reports, but <strong>only if a parent explicitly agrees</strong> — see <a href="#analytics">Anonymous Usage Statistics</a> below</li>
         </ul>
     </div>
 
@@ -100,9 +100,14 @@
         <p>The microphone permission is only requested when you choose to record your voice. The app cannot access the microphone without your explicit permission.</p>
     </div>
 
-    <div class="card">
-        <h2><span class="emoji">📵</span> No Analytics or Tracking</h2>
-        <p>We do not use any analytics frameworks, advertising SDKs, or tracking technologies. We have <strong>no way</strong> to know how you use the app, how many times you open it, or which episodes you read. Your reading habits are entirely private.</p>
+    <div class="card" id="analytics">
+        <h2><span class="emoji">📊</span> Anonymous Usage Statistics (Optional)</h2>
+        <p>The first time Pitiwee opens, it asks whether you agree to share <strong>anonymous usage statistics</strong>. You can decline, and the app works exactly the same. You can change your mind at any time in <strong>Settings &rarr; Anonymous statistics</strong>.</p>
+        <p><strong>Nothing is sent unless you say yes.</strong> Until then — and again immediately if you turn it off — the app transmits nothing at all.</p>
+        <p>If you agree, the app records simple, anonymous facts about how the stories are used, so we can make them better: that an episode was opened, whether it was read to the end or left before the last page, that the purchase screen was shown. These are counts of actions, not content.</p>
+        <p><strong>What is never collected:</strong> your name, your child’s name, your email, your address, your contacts, your location, your photos, and <strong>your voice recordings</strong> — the stories you record in your own voice stay on your device and are never sent to us or to anyone else.</p>
+        <p><strong>No advertising identifier.</strong> Pitiwee is built with the variant of Google Analytics for Firebase that excludes the advertising identifier (IDFA) entirely. The app displays no advertising and does not track you across other apps or websites.</p>
+        <p>These statistics are processed by <strong>Google Analytics for Firebase</strong> on our behalf. Google’s handling of this data is described in the <a href="https://firebase.google.com/support/privacy" target="_blank" rel="noopener">Firebase Privacy and Security</a> documentation.</p>
     </div>
 
     <div class="card">
